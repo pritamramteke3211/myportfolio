@@ -10,7 +10,8 @@
 }
 
 .navbar-brand{
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 22px!important;
 }
 
 .alert{

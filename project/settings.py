@@ -12,11 +12,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = os.environ['PORTFOLIO_SECRET_KEY']
+# SECRET_KEY = 'django-insecure-=t^08827)9534^g8m3xp)v586^-7e-d7w2pb__f@59av&2dl!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = ["myportfolio36.herokuapp.com","localhost"]
+# ALLOWED_HOSTS = ["*"]
 
 
 # Application definition

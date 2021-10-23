@@ -12,6 +12,7 @@ class Project(models.Model):
     lang_used = models.CharField(max_length=200,default='')
     proj_image = models.ImageField(upload_to='images/')
     release = models.DateTimeField(default=datetime.now())
+    proj_link = models.URLField(default='', blank=True)
 
 
     def __str__(self):
