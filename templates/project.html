@@ -1,0 +1,24 @@
+<div class="row mx-0">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    <h1 class="page-header">MY PROJECTS</h1>
+
+        <div class="row mx-0">
+        {% for project in projects %}
+            <div class="col mb-5">
+                <div class="card">
+                    <img src="{{project.proj_image.url}}" class="card-img-top" alt="{{project.name}}_image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{project.name}}</h5>
+                        <p class="card-text">{{project.s_description}}</p>
+                        <a href="#" class="btn btn-primary card_btn d-grid gap-2">SEE LIVE</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        
+
+    </div>
+<div class="col-md-2"></div>
+</div>

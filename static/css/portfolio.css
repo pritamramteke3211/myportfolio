@@ -1,0 +1,133 @@
+/* Section */
+.main{
+     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/wall_in.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 93vh;
+     width:100%;
+    
+     
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+.alert{
+    margin-bottom: 0px; 
+    border: 0px;
+    border-radius: 0px;
+}
+
+.page-header{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Home */
+
+.home_btn{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    
+    
+}
+
+.home_btn:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    
+    
+}
+
+.home_btn:active{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    
+    
+}
+
+
+
+.scroll_down{
+    margin-top: 50px;
+}
+
+.scroll_down a{
+    
+    color: white;
+    text-decoration: none;
+}
+
+
+/* About */
+.about_content{
+    height:60vh;
+    margin-top: 10px;
+}
+
+.about h4{
+    text-align: start;
+}
+
+.about p{
+    text-align: justify;
+}
+
+.skills{
+    text-align:start;
+}
+
+.skill{
+   font-size: 20px; 
+   background:rgb(36, 88, 202)!important;  
+   font-weight: 400; 
+   margin: 5px 5px;
+}
+
+
+
+/* Project */
+.project{
+    background-color:aliceblue;
+}
+
+.social{
+    text-align: start;
+}
+
+.card_btn{
+    background:rgb(36, 88, 202)!important;
+    border-radius: 0px;
+    
+}
+
+
+
+/* Contact */
+
+
+.social a{
+    color:rgb(36, 88, 202)!important;  
+    text-decoration: none;
+}
+
+.form_input{
+    border-radius: 0px!important;
+}
+
+.submit_btn{
+    background:rgb(36, 88, 202)!important;
+    color:white;
+    font-weight: 400;
+}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% load static %}
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+</style>
+
+
+{% block body %}
+
+<div class="main text-white">
+    <div class="row mx-0">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 text-center" style='margin-top: 15%;'>
+        <h1 style='font-size:60px; '>Hi, I am Pritam Ramteke</h1>
+        <p style='font-size:40px'> A Full Stack Python Web Developer.</p>
+        <br>
+        <div class="mb-4"><a href="#project" class="home_btn">MY PROJECTS </a> </div>
+        <div><a href="media\files\PritamRamtekeCv.pdf" class="home_btn" target='blank'> RESUME </a></div>
+            
+            
+        
+    </div>
+    <div class="col-md-2">
+        
+    </div>
+    </div>
+
+    {% comment %} <div class="text-center home_content">
+        <div class="home_heading ">
+            <h1 class="">Hi, I am Pritam Ramteke</h1>
+            <p> A Full Stack Python Web Developer.</p>
+        </div>
+
+        <div class="home-buttons">
+            <a href="#project" class="home_btn">MY PROJECTS </a>
+            <a href="media\files\PritamRamtekeCv.pdf" class="home_btn" target='blank'> RESUME </a>
+        </div>
+
+        <div class='scroll_down'>
+            <a href="#about">SCROLL DOWN <i class="fas fa-chevron-down"></i></a>
+        </div>
+    </div> {% endcomment %}
+
+
+
+</div>
+
+<div class="about " id='about'>
+    {% include 'about.html' %}
+</div>
+
+<div class="project" id='project'>
+    {% include 'project.html' %}
+</div>
+
+<div class="contact mb-5" id='contact'>
+    {% include 'contact.html' %}
+</div>
+
+{% endblock body %}
