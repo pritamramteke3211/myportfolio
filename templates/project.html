@@ -5,12 +5,12 @@
 
         <div class="row mx-0">
         {% for project in projects %}
-            <div class="col mb-5">
-                <div class="card">
+            <div class="col mb-5" >
+                <div class="card" style="width: 400px;">
                     <img src="{{project.proj_image.url}}" class="card-img-top" alt="{{project.name}}_image">
                     <div class="card-body text-center">
                         <h5 class="card-title">{{project.name}}</h5>
-                        <p class="card-text">{{project.s_description}}</p>
+                        <p class="card-text"  style="height: 90px;">{{project.s_description|truncatechars:150}}</p>
                         <a href="{{project.proj_link}}" class="btn btn-primary card_btn d-grid gap-2" target='_blank'>SEE LIVE</a>
                     </div>
                 </div>
