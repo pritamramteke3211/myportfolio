@@ -5,8 +5,8 @@
 
         <div class="row mx-0">
         {% for project in projects %}
-            <div class="col mb-5" >
-                <div class="card" style="width: 460px;">
+            <div class="col mb-5 " id="col_id" >
+                <div class="card" id="card_id">
                     <img src="{{project.proj_image.url}}" class="card-img-top" alt="{{project.name}}_image">
                     <div class="card-body text-center">
                         <h5 class="card-title">{{project.name}}</h5>

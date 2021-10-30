@@ -24,9 +24,25 @@
     margin-top: 20px;
     margin-bottom: 60px;
     text-align: center;
+    /* font-family: 'Raleway', 'sans-serif'; */
+    /* font-weight: 600; */
 }
 
 /* Home */
+.home_text{
+    font-family: 'poppins', sans-serif;
+   
+    margin-top: 15%;
+    
+}
+
+.head1{
+    font-size:60px;
+}
+
+.head2{
+    font-size: 40px;
+}
 
 .home_btn{
     color: white;
@@ -37,6 +53,8 @@
     
     
 }
+
+
 
 .home_btn:hover{
     color: white;
@@ -113,6 +131,16 @@
     
 }
 
+.card-text{
+  font-size: 16px;
+}
+
+.card{
+    width: 100%;
+    /* min-width: 345px; */
+    max-width: 480px;
+   
+}
 
 
 /* Contact */
