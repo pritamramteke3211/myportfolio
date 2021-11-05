@@ -11,35 +11,36 @@
 
 {% block body %}
 
-<div class="main text-white">
-    <div class="row mx-0">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 home_text text-center" >
-        <h1 class="head1" >Hi, I am Pritam Ramteke</h1>
-        <p class="head2" > A Full Stack Python Web Developer.</p>
-        <br>
-        <div class="mb-4"><a href="#project" class="home_btn">MY PROJECTS </a> </div>
-        <div><a href="media\files\PritamRamtekeCv.pdf" class="home_btn" target='blank'> RESUME </a></div>
-            
-            
-        
+<div class="main">
+    <div class="row mx-0 justify-content-center ">
+
+        <div class="col-md-5 col-11" id='home_img'>
+            <img src="{% static 'images/V_Potrait_Clean_2_o-removebg.png' %}" class="img-fluid w-100" alt="">
+        </div>
+
+        <div class="col-md-5 col-11 home_text ">
+            <h1 class="head1 pb-2">Hi, <br> I am Pritam Ramteke</h1>
+            <p class="head2 pb-2"> A Full Stack Web Developer.</p>
+            <p id='home_menu'> <a href="#project" class="home_menu_btn1"> PROJECTS </a> | <a
+                    href="media\files\PritamRCV3.pdf" class="home_menu_btn2" target='blank'> RESUME </a> </p>
+
+        </div>
+
+
     </div>
-    <div class="col-md-2">
-        
-    </div>
-    </div>
+</div>
 
 </div>
 
-<div class="about " id='about'>
+<div class="about pt-5" id='about'>
     {% include 'about.html' %}
 </div>
 
-<div class="project" id='project'>
+<div class="project py-5" id='project'>
     {% include 'project.html' %}
 </div>
 
-<div class="contact mb-5" id='contact'>
+<div class="contact py-5" id='contact'>
     {% include 'contact.html' %}
 </div>
 

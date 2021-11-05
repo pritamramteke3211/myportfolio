@@ -1,12 +1,42 @@
+/* Navbar */
+#nav_bar{
+    background-color: rgba(255,255,255,0.3);
+    /* background-color: rgba(0, 0, 0, 0.733); */
+    padding: 20px 30px;
+    
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+    padding-left: 75%;
+}
+
+#nav_bar a{
+    color: black;
+}
+
+#nav_bar a:hover{
+    font-weight: bolder;
+}
+
+#nav_bar a:active{
+    font-weight: bolder;
+}
+
+.active{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
 /* Section */
 .main{
-     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/wall_in.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 93vh;
+
+     /* height: 93vh; */
      width:100%;
-    
-     
+     padding-top: 5%;
+     padding-bottom: 5%;
+
+      
 }
 
 .navbar-brand{
@@ -31,17 +61,45 @@
 /* Home */
 .home_text{
     font-family: 'poppins', sans-serif;
-   
-    margin-top: 15%;
+    margin-top: 13%;
     
 }
 
+#home_menu{
+    font-weight: 700;
+}
+
+.home_menu_btn1{
+    padding-right:15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.home_menu_btn2{
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.home_menu_btn1:hover{
+    text-decoration: underline;
+}
+
+.home_menu_btn2:hover{
+    text-decoration: underline;
+}
+
+
+
 .head1{
-    font-size:60px;
+    font-size:56px;
 }
 
 .head2{
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .home_btn{
@@ -90,8 +148,11 @@
 
 
 /* About */
+.about{
+    background-color: #f2f2f2;
+}
 .about_content{
-    height:60vh;
+    padding-bottom: 10%;
     margin-top: 10px;
 }
 
@@ -103,9 +164,7 @@
     text-align: justify;
 }
 
-.skills{
-    text-align:start;
-}
+
 
 .skill{
    font-size: 20px; 
@@ -118,7 +177,7 @@
 
 /* Project */
 .project{
-    background-color:aliceblue;
+    background-color:white;
 }
 
 .social{
@@ -144,7 +203,9 @@
 
 
 /* Contact */
-
+.contact{
+    background-color: #f2f2f2;
+}
 
 .social a{
     color:rgb(36, 88, 202)!important;  
@@ -159,4 +220,133 @@
     background:rgb(36, 88, 202)!important;
     color:white;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 1500px){
+    
+    
+    .head1{
+        font-size:50px;
+    }
+    
+    .head2{
+        font-size: 30px;
+    }
+
+    #home_img{
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+
+    .home_text{
+        font-family: 'poppins', sans-serif;
+        margin-top: 12%;
+        
+    }
+    
+    .head1{
+        font-size:40px;
+    }
+    
+    .head2{
+        font-size: 24px;
+    }
+
+    #home_img{
+        padding-top: 8%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .navbar-expand-lg .navbar-collapse {
+        padding-left: 66%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        padding-left: 0;
+    }
+    
+    .card-text{
+        font-size: 15px;
+      }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .home_text{
+        font-family: 'poppins', sans-serif;
+        margin-top: 5%;
+        text-align: center;
+        
+    }
+    
+    .head1{
+        font-size:40px;
+    }
+    
+    .head2{
+        font-size: 24px;
+    }
+
+    #home_img{
+        padding-top: 8%;
+        
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    
+    
+    .home_text{
+        font-family: 'poppins', sans-serif;
+        margin-top: 5%!important;
+        text-align: center;
+        
+    }
+    
+    .head1{
+        font-size:28px!important;
+    }
+    
+    .head2{
+        font-size: 20px!important;
+    }
+
+    #home_img{
+        padding-top: 20%;
+    }
+
+    #about{
+        text-align: center;
+    }
+
+    #about h4{
+        text-align: center;
+    }
+
+    #contact_form{
+        text-align: center; 
+    }
+
+    #contact_form h4{
+        text-align: center;
+    }
+
+    #social_links h4{
+        text-align: center;
+    }
+    .socials{
+        padding: 0 8%;
+    }
+    #social_links a{
+        text-align: justify;
+    }
 }

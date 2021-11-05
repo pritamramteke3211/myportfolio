@@ -1,24 +1,23 @@
-<div class="row mx-0">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-    <h1 class="page-header">MY PROJECTS</h1>
+<div class="row mx-0 justify-content-center">
+    
 
-        <div class="row mx-0">
-        {% for project in projects %}
-            <div class="col mb-5 " id="col_id" >
+        <h1 class="page-header">MY PROJECTS</h1>
+
+        
+            {% for project in projects %}
+            <div class="col-md-5 col-11 mb-5 " id="col_id">
                 <div class="card" id="card_id">
                     <img src="{{project.proj_image.url}}" class="card-img-top" alt="{{project.name}}_image">
                     <div class="card-body text-center">
                         <h5 class="card-title">{{project.name}}</h5>
-                        <p class="card-text"  style="height: 90px;">{{project.s_description|truncatechars:150}}</p>
-                        <a href="{{project.proj_link}}" class="btn btn-primary card_btn d-grid gap-2" target='_blank'>SEE LIVE</a>
+                        <p class="card-text" style="height: 90px;">{{project.s_description|truncatechars:150}}</p>
+                        <a href="{{project.proj_link}}" class="btn btn-primary card_btn d-grid gap-2"
+                            target='_blank'>SEE LIVE</a>
                     </div>
                 </div>
             </div>
-        {% endfor %}
-        </div>
+            {% endfor %}
         
 
-    </div>
-<div class="col-md-2"></div>
+   
 </div>

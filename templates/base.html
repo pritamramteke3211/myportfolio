@@ -47,6 +47,88 @@
     <script src="{{STATIC_PREFIX}}js/popper.min.js"></script>
     <script src="{{STATIC_PREFIX}}js/bootstrap.min.js"></script>
 
+    <script>
+        console.log(window.pageYOffset);
+        
+        console.log(screen.width)
+        navbar = document.getElementById('nav_bar');
+        nav_link = document.getElementsByClassName('nav_link');
+        navbar_toggler = document.getElementsByClassName('navbar-toggler');
+        console.log(navbar_toggler[0].style)
+        
+
+        home_link = document.getElementById('home_link');
+        about_link = document.getElementById('about_link');
+        project_link = document.getElementById('project_link');
+        contact_link = document.getElementById('contact_link');
+
+    
+    window.addEventListener('scroll',function(){
+    
+    if(window.pageYOffset > 0){
+        
+        navbar.style.background = "rgba(0, 0, 0, 0.733)";
+        navbar.style.padding= "10px 30px";
+        //navbar_toggler_icon[0].style.border-color = 'white!important';
+        navbar_toggler[0].style.border = "1px solid white";
+        
+       for (var i=0; i< nav_link.length ; i++){
+           nav_link[i].style.color = "white";
+       }  
+    }
+    else{
+        navbar_toggler[0].style.border = "1px solid rgba(0,0,0,.1)";
+        navbar.style.background = "rgba(255,255,255,0.3)";
+        navbar.style.padding= "20px 30px";
+        //navbar_toggler.style.background = 'black!important';
+
+        for (var i=0; i< nav_link.length ; i++){
+           nav_link[i].style.color = "black";
+       }  
+    }
+});
+
+window.addEventListener('scroll',function(){
+
+    if(screen.width > 991){
+        home_link.classList.add('active')
+    if(window.pageYOffset > 638){
+        
+        about_link.classList.add('active')
+        project_link.classList.remove('active')
+        contact_link.classList.remove('active')
+        home_link.classList.remove('active') 
+    }
+    if(window.pageYOffset > 1128){
+        about_link.classList.remove('active')
+        project_link.classList.add('active')
+        contact_link.classList.remove('active')
+        home_link.classList.remove('active') 
+    }
+    if(window.pageYOffset > 1768){
+        about_link.classList.remove('active')
+        project_link.classList.remove('active')
+        contact_link.classList.add('active')
+        home_link.classList.remove('active') 
+    }
+   
+    
+    if(window.pageYOffset <= 638){
+        about_link.classList.remove('active')
+        project_link.classList.remove('active')
+        contact_link.classList.remove('active')
+        home_link.classList.add('active') 
+    }
+    }
+    else{
+        home_link.classList.remove('active')
+    }
+});
+        
+       
+    
+    </script>
+
     <footer class="footer mt-auto py-2 bg-dark">
         <div class="container text-center text-white">
             <a class="btn btn-outline-primary mb-2" href="#top"> Back to Top</a><br>
