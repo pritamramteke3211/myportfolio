@@ -1,24 +1,32 @@
 <div class="row mx-0 justify-content-center">
-    
-        <div class="col-11">
-        <h1 class="page-header">MY PROJECTS</h1>
 
-            <div class="row mx-0 justify-content-center">
-            {% for project in projects %}
-            <div class="col-md-5 col-11 mb-5 text-center" id="col_id">
-                <div class="card " id="card_id">
-                    <img src="{{project.proj_image.url}}" class="card-img-top" alt="{{project.name}}_image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">{{project.name}}</h5>
-                        <p class="card-text" style="height: 90px;">{{project.s_description|truncatechars:150}}</p>
-                        <a href="{{project.proj_link}}" class="btn btn-primary card_btn d-grid gap-2"
-                            target='_blank'>SEE LIVE</a>
+    <div class="col-11">
+        <h1 class="page-header">MY PROJECTS</h1>
+        <div class="project_box">
+            <div class="row mx-0 justify-content-center ">
+
+                {% for project in projects %}
+                <div class="row mx-0 my-2 py-2 project_item ">
+                    <div class="col-lg-4  proj_img "> <img src="{{project.proj_image.url}}" alt="" ></div>
+                    <div class="col-lg-8  py-3 project_description">
+                        <h3>{{project.name}}</h3>
+                        <p>{{project.description}}</p>
+                        <p><strong>Technology Used: </strong>{{project.lang_used}}</p>
+                        <div>
+                        {% if project.proj_link %}
+                        <a href="{{project.proj_link}}" class="btn btn-primary" target="_blank">See Live</a>
+                        {% else %}
+                        <a href="{% url project.proj_link_name %}" class="btn btn-primary" target="_blank">See Live</a>
+                        {% endif %}
+                        <a href="#" class="btn btn-primary" target="_blank">Check Code</a>
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
+
             </div>
-            {% endfor %}
-            </div>
-        
+        </div>
+
     </div>
-   
+
 </div>

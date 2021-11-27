@@ -1,0 +1,339 @@
+/* navbar */
+#top_nav{
+    background-color: #daac00!important;
+    padding: 0 8%;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    color:white;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+#top_nav_img{
+    width:100%;
+    height: 70px;
+}
+
+#searchbox{
+    background-color: #fcc302;
+    border: 0px;
+    border-radius: 0;
+    color:white;
+    position: relative;
+    left: 48px;
+    box-shadow:5px 5px 5px #00000021;
+    
+
+}
+
+#searchbox::placeholder{
+    color:white;
+}
+
+#searchbtn{
+    position: relative;
+    border: 0px;
+    border-radius: 0;
+    z-index: 99;
+    background-color: #00bec9;
+    color:white;
+    
+}
+
+@media only screen and (max-width: 768px){
+    #top_nav_img{
+        position: relative;
+        left: 10px;
+    }
+    #searchform{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #top_nav_img{
+        width: 180px;
+    }
+
+    #top_nav{
+        padding: 0 0%;
+    }
+}
+
+
+/* Banner */
+#banner{
+    background-color: #fcc302;
+    padding-bottom: 35px;
+    
+   
+}
+
+#bannertext h1{
+    color: white;
+    font-size: 70px;
+    margin-top: 170px;
+    
+}
+
+#bannertext p{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#banner-btn-1{
+    background-color: #00bec9;
+    border: 2px solid #00bec9;
+    color: white;
+}
+
+#banner-btn-2{
+    border: 2px solid white;
+    color: white;
+    margin-left: 15px;
+}
+
+#bannerimg{
+    
+    padding-top: 110px;
+
+}
+
+
+
+/* Services */
+#service-text{
+    padding-top: 14%;
+    padding-bottom: 5%;
+}
+
+
+#service-text p{
+    text-align: justify;
+}
+
+#service-btn{
+    color: white;
+    background-color: #fcc302;
+    border: 2px solid #fcc302;
+
+}
+
+#service-img{
+    padding:  8%;
+}
+
+#counter-section{
+    background-image: linear-gradient(0deg,#fcc202c4 , #fcc202c4), url('/refer_images/vet-training.jpg');
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.counter-icon{
+    font-size: 70px;
+}
+
+/* Blog */
+#blog{
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+#blog-title{
+    font-size: 50px;
+    font-weight:bolder;
+}
+
+#blog-p{
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.card-title{
+    font-weight: 600;
+    
+}
+
+#card_date{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#card_text{
+    text-align: justify;
+}
+
+
+#card_link{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 1300px){
+    #bannertext h1{
+        
+        font-size: 50px;
+        
+    }  
+    #banner{
+        padding-bottom: 20px;
+    }
+
+    #service-img{
+        padding: 10% 4%;
+    }
+
+    .card-title{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+
+}
+
+/* footer */
+#footer{
+    background-color: #343434;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer-search-box{
+    background-color:#fcc302;
+    border: 0px;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+#footer-search-submit{
+    background-color: #00bec9;
+    color: white;
+    padding: 15px 40px;
+    border: 0px;
+    border-radius: 0;
+    
+}
+
+.social{
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 1150px){
+    #footer-search-box{
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #footer-search-box{
+        max-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #footer{
+        padding-top: 10px;
+    padding-bottom: 40px;
+        
+    }
+    #footer h4{
+        padding-top: 50px;
+        
+    }
+    #footer-search-box{
+        max-width: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    #bannertext h1{
+        margin-top: 80px;
+        font-size: 40px;
+    }  
+    #bannertext p{
+        font-size: 16px;
+    }
+    #bannerimg{
+        padding-top: 75px;
+    }
+    #banner{
+        padding-bottom: 20px;
+    }
+
+    #service-img{
+        padding: 15% 4%;
+    }
+
+    #service-text h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+     
+    
+    #banner{
+        /* padding: 0px 10% 22px 10%; */
+        padding-bottom: 20px;
+        text-align: center;
+        
+    }
+
+    #bannertext h1{
+        margin-top: 80px;
+        font-size: 29px;
+    }  
+
+    #bannertext p{
+        font-size: 16px;
+    }
+
+    #service-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .counter-icon{
+        font-size: 50px;
+    }
+
+    #counter-section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-position: center;
+        background-size: cover;
+    
+    }
+}
+

@@ -27,7 +27,7 @@
      {% if messages %}
             {% for message in messages %}
 
-                <div class="alert alert-{{ message.tags }} alert-dismissible  show" role="alert">
+                <div class="alert alert-{{ message.tags }} alert-dismissible  show text-center " role="alert" id="alert_box">
                     {{ message }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -48,9 +48,14 @@
     <script src="{{STATIC_PREFIX}}js/bootstrap.min.js"></script>
 
     <script>
-        console.log(window.pageYOffset);
+
         
-        console.log(screen.width)
+
+        
+
+        {% comment %} console.log(window.pageYOffset);
+        
+        console.log(screen.width) {% endcomment %}
         navbar = document.getElementById('nav_bar');
         nav_link = document.getElementsByClassName('nav_link');
         navbar_toggler = document.getElementsByClassName('navbar-toggler');
@@ -99,13 +104,13 @@ window.addEventListener('scroll',function(){
         contact_link.classList.remove('active')
         home_link.classList.remove('active') 
     }
-    if(window.pageYOffset > 1128){
+    if(window.pageYOffset > 1298){
         about_link.classList.remove('active')
         project_link.classList.add('active')
         contact_link.classList.remove('active')
         home_link.classList.remove('active') 
     }
-    if(window.pageYOffset > 1768){
+    if(window.pageYOffset > 2000){
         about_link.classList.remove('active')
         project_link.classList.remove('active')
         contact_link.classList.add('active')
