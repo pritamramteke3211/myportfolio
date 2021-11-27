@@ -18,7 +18,12 @@
                         {% else %}
                         <a href="{% url project.proj_link_name %}" class="btn btn-primary" target="_blank">See Live</a>
                         {% endif %}
+                        
+                        {% if project.github_url %}
+                        <a href="{{project.github_url}}" class="btn btn-primary" target="_blank">Check Code</a>
+                        {% else %}
                         <a href="#" class="btn btn-primary" target="_blank">Check Code</a>
+                        {% endif %}
                         </div>
                     </div>
                 </div>
